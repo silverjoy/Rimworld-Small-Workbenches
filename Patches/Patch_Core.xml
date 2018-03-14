@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- RecipeDefs -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[@Name = "MakeStoneBlocksBase"]/recipeUsers</xpath>
+		<value>
+			<li>Silj_TableStonecutterMini</li>
+		</value>
+	</Operation>
+
+	<!-- ThingDefs -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[thingClass = "Building_Art"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>Silj_TableSculptingMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[@Name = "MakeableShellBase" or defName = "Apparel_ShieldBelt" or thingClass = "SmokepopBelt" or @Name = "ArmorMakeableBase" or @Name = "BaseMakeableGun"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>Silj_TableMachiningMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Medicine" or defName = "GoJuice" or defName = "Penoxycyline" or defName = "Flake" or defName = "PsychoidPekoe" or defName = "Yayo" or defName = "WakeUp"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>Silj_DrugLabMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Apparel_TribalHeaddress" or @Name = "ApparelMakeableBase" or defName = "Apparel_TribalA"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>Silj_ElectricTailoringBenchMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[@Name = "BaseMeleeWeapon" or defName = "MeleeWeapon_Shiv" or defName = "MeleeWeapon_Club" or @Name = "BaseWeaponNeolithic" or defName = "Arrow_Short" or defName = "Bow_Recurve"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>Silj_ElectricSmithyMini</li>
+		</value>
+	</Operation>
+
+	<!-- WorkGiverDefs -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsCook"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_ElectricStoveMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_TableButcherMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsBrew"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_BreweryMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_ElectricSmithyMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsMachiningTable"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_TableMachiningMini</li>
+		</value>
+	</Operation>
+
+<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsComponentAssemblyBench"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_ComponentAssemblyBenchMini</li>
+		</value>
+	</Operation>
+-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_ElectricTailoringBenchMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsSculpt"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_TableSculptingMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsProduceDrugs"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_DrugLabMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsStonecut"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_TableStonecutterMini</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName = "DoBillsSmelter"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Silj_ElectricSmelterMini</li>
+		</value>
+	</Operation>
+	
+</Patch>

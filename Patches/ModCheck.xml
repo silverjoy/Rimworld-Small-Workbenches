@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Architect Sense</modName>
+				<yourMod>Small Workbenches</yourMod>
+			</li>
+			<li Class="ModCheck.loadOrder">
+				<modName>Architect Sense</modName>
+				<yourMod>Small Workbenches</yourMod>
+				<errorOnFail>true</errorOnFail>
+				<customMessageFail>Please load Architect Sense before Small Workbenches</customMessageFail>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Silj_TableSculptingMini.label>소형 조소 작업대</Silj_TableSculptingMini.label>
+	<Silj_TableSculptingMini.description>조각용 도구가 배치된 작업대입니다. 최적화된 작업공간을 제공합니다.</Silj_TableSculptingMini.description>
+
+	<Silj_TableButcherMini.label>소형 도축 작업대</Silj_TableButcherMini.label>
+	<Silj_TableButcherMini.description>죽은 동물을 생고기 조각으로 가공할 때 사용하는 무거운 탁자입니다. 최적화된 작업공간을 제공합니다.</Silj_TableButcherMini.description>
+
+	<Silj_ElectricTailoringBenchMini.label>소형 자동 재봉 작업대</Silj_ElectricTailoringBenchMini.label>
+	<Silj_ElectricTailoringBenchMini.description>빠른 의류 생산을 위한 작업대입니다. 전기 없이도 40% 속도로 작동합니다. 최적화된 작업공간을 제공합니다.</Silj_ElectricTailoringBenchMini.description>
+
+	<Silj_ElectricSmithyMini.label>소형 단조 전기작업대</Silj_ElectricSmithyMini.label>
+	<Silj_ElectricSmithyMini.description>기계가 사용되지 않는 금속 무기와 도구를 생산하기 위한 작업대입니다. 전기로 작동합니다. 최적화된 작업공간을 제공합니다.</Silj_ElectricSmithyMini.description>
+
+	<Silj_TableMachiningMini.label>소형 기계 작업대</Silj_TableMachiningMini.label>
+	<Silj_TableMachiningMini.description>총을 조립하거나 메카노이드를 분해할 수 있는 작업대입니다. 최적화된 작업공간을 제공합니다.</Silj_TableMachiningMini.description>
+
+	<Silj_ElectricStoveMini.label>소형 전기 스토브</Silj_ElectricStoveMini.label>
+	<Silj_ElectricStoveMini.description>식재료로 식사를 준비하기 위한 전기 스토브입니다. 최적화된 작업공간을 제공합니다.</Silj_ElectricStoveMini.description>
+
+	<Silj_TableStonecutterMini.label>소형 절삭작업대</Silj_TableStonecutterMini.label>
+	<Silj_TableStonecutterMini.description>거친 돌을 잘라 사용하기 좋은 석재로 만드는 작업대입니다. 최적화된 작업공간을 제공합니다.</Silj_TableStonecutterMini.description>
+
+	<Silj_BreweryMini.label>소형 양조대</Silj_BreweryMini.label>
+	<Silj_BreweryMini.description>맥주를 만들 수 있는 도구를 갖춘 탁자입니다. 최적화된 작업공간을 제공합니다.</Silj_BreweryMini.description>
+
+	<Silj_DrugLabMini.label>소형 약물 연구대</Silj_DrugLabMini.label>
+	<Silj_DrugLabMini.description>다양한 약물 제조에 필요한 용기, 가열장치, 측정 도구로 이루어진 작업대입니다. 최적화된 작업공간을 제공합니다.</Silj_DrugLabMini.description>
+
+	<Silj_ElectricSmelterMini.label>소형 전기로</Silj_ElectricSmelterMini.label>
+	<Silj_ElectricSmelterMini.description>금속 파편이나 금속이 혼합된 아이템에서 금속을 추출합니다. 전기가 많이 소비됩니다. 최적화된 작업공간을 제공합니다.</Silj_ElectricSmelterMini.description>
+
+	<!-- EPOE -->
+
+	<EPOE_TableBionicsMini.label>소형 생체공학 작업대</EPOE_TableBionicsMini.label>
+	<EPOE_TableBionicsMini.description>생체공학품을 만들 수 있는 작업대입니다. 최적화된 작업공간을 제공합니다.</EPOE_TableBionicsMini.description>
+
+	<EPOE_TableSimpleProstheticMini.label>소형 보철물 작업대</EPOE_TableSimpleProstheticMini.label>
+	<EPOE_TableSimpleProstheticMini.description>간단한 보철물을 만들 수 있는 작업대입니다. 최적화된 작업공간을 제공합니다.</EPOE_TableSimpleProstheticMini.description>
+
+	<EPOE_TableOrgansMini.label>소형 조직 인쇄기</EPOE_TableOrgansMini.label>
+	<EPOE_TableOrgansMini.description>장기를 제작하기 위한 3D 인쇄기가 장비된 작업실입니다. 최적화된 작업공간을 제공합니다.</EPOE_TableOrgansMini.description>
+
+	<!-- Mending -->
+
+	<Mending_TableMendingMini.label>소형 수선 작업대</Mending_TableMendingMini.label>
+	<Mending_TableMendingMini.description>손상된 아이템을 수리하기 위한 모든 도구를 갖춘 작업대입니다. 전력을 요구하고 수리용품을 소모합니다. 수리용품은 자동 재봉 작업대에서 만들 수 있습니다. 최적화된 작업공간을 제공합니다.</Mending_TableMendingMini.description>
+
+</LanguageData>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ArchitectSense.DesignationSubCategoryDef>
+    <defName>EPOE_SubCategoryWorkbenchMini</defName>
+    <label>small prosthetic workbenches</label>
+    <description>prosthetic workbenchs with optimized workspace.</description>
+    <defNames>
+      <li>EPOE_TableBionicsMini</li>
+      <li>EPOE_TableSimpleProstheticMini</li>
+      <li>EPOE_TableOrgansMini</li>
+    </defNames>
+    <designationCategory>Production</designationCategory>
+    <preview>true</preview>
+    <debug>true</debug>
+  </ArchitectSense.DesignationSubCategoryDef>
+
+  <ThingDef ParentName="Silj_BenchBase"> <!-- I read it <3 -->
+    <defName>EPOE_TableBionicsMini</defName>
+    <label>small bionics workbench</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A workbench equipped for production of high tech bionics. Provides optimized workspace.</description>
+    <graphicData>
+      <texPath>Things/Buildings_EPOE/EPOE_TableBionicsMini</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+       <Steel>250</Steel>
+       <Plasteel>150</Plasteel>
+       <Component>3</Component>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3750</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(2,1)</size>
+<!--
+    <designationCategory>Production</designationCategory>
+-->
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+<!--
+    <recipes>
+      <li>CreatePowerArm</li>
+      <li>CreateBionicArm</li>
+      <li>CreateBionicLeg</li>
+      <li>CreateBionicHand</li>
+      <li>CreateBionicFoot</li>
+      <li>CreateBionicSpine</li>
+      <li>CreateBionicEye</li>
+      <li>CreateBionicEar</li>
+      <li>CreateBionicJaw</li>
+      <li>CreateSilentJaw</li>
+      <li>CreateMedicalRib</li>
+      <li>CreateDruggedRib</li>
+      <li>CreateAdrenalineRib</li>
+      <li>CreatePainkillerRib</li>
+    </recipes>
+-->
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>450</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+<!--
+    <researchPrerequisites>
+      <li>Bionics</li>
+    </researchPrerequisites>
+-->
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+  </ThingDef>
+  
+  <ThingDef ParentName="Silj_BenchBase">
+    <defName>EPOE_TableSimpleProstheticMini</defName>
+    <label>small simple prosthetics workbench</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A workbench equipped for production of simple prostheses. Provides optimized workspace.</description>
+    <graphicData>
+      <texPath>Things/Buildings_EPOE/EPOE_TableSimpleProstheticsMini</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+       <Steel>250</Steel>
+       <Component>2</Component>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <WorkToBuild>2250</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(2,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+<!--
+    <designationCategory>Production</designationCategory>
+-->
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+<!--
+    <recipes>
+      <li>CreateSimpleProstheticLeg</li>
+      <li>CreateSimpleProstheticArm</li>
+      <li>CreateSimpleProstheticHand</li>
+      <li>CreateSimpleProstheticFoot</li>
+      <li>CreateArtificialPelvis</li>
+      <li>CreateArtificialClavicle</li>
+      <li>CreateHydraulicJaw</li>
+      <li>CreateArtificialNose</li>
+      <li>CreateLightReceptor</li>
+      <li>CreateGoldenEye</li>
+    </recipes>
+-->
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+<!--
+    <researchPrerequisites>
+      <li>SimpleProsthetics</li>
+    </researchPrerequisites>
+-->
+  </ThingDef>
+
+  <ThingDef ParentName="Silj_BenchBase">
+    <defName>EPOE_TableOrgansMini</defName>
+    <label>small tissue printer</label> <!-- it does sound cooler -->
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A workstation, equipped with a 3D printer to craft organs. Provides optimized workspace.</description>
+    <graphicData>
+      <texPath>Things/Buildings_EPOE/EPOE_TableOrgansMini</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>200</Steel>
+      <Plasteel>150</Plasteel>
+      <Component>3</Component>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.5</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3375</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <size>(2,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+<!--
+    <designationCategory>Production</designationCategory>
+-->
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+<!--
+    <recipes>
+      <li>CreateBrainStimulator</li>
+      <li>CreateSurrogateLung</li>
+      <li>CreateSurrogateHeart</li>
+      <li>CreateSurrogateKidney</li>
+      <li>CreateSurrogateStomach</li>
+      <li>CreateSurrogateLiver</li>
+    </recipes>
+-->
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+<!--
+    <researchPrerequisites>
+      <li>SurrogateOrgans</li>
+    </researchPrerequisites>
+-->
+  </ThingDef>
+
+</Defs>

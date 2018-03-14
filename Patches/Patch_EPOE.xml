@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Expanded Prosthetics and Organ Engineering</modName>
+				<yourMod>Small Workbenches</yourMod>
+			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Small Workbenches</modName>
+                <file>Buildings_EPOE.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "EPOE_TableBionicsMini"]</xpath>
+				<value>
+					<designationCategory>
+						<li>Production</li>
+					</designationCategory>
+					<recipes>
+						<li>CreatePowerArm</li>
+						<li>CreateBionicArm</li>
+						<li>CreateBionicLeg</li>
+						<li>CreateBionicHand</li>
+						<li>CreateBionicFoot</li>
+						<li>CreateBionicSpine</li>
+						<li>CreateBionicEye</li>
+						<li>CreateBionicEar</li>
+						<li>CreateBionicJaw</li>
+						<li>CreateSilentJaw</li>
+						<li>CreateMedicalRib</li>
+						<li>CreateDruggedRib</li>
+						<li>CreateAdrenalineRib</li>
+						<li>CreatePainkillerRib</li>
+					</recipes>
+					<researchPrerequisites>
+						<li>Bionics</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "EPOE_TableSimpleProstheticMini"]</xpath>
+				<value>
+					<designationCategory>
+						<li>Production</li>
+					</designationCategory>
+					<recipes>
+						<li>CreateSimpleProstheticLeg</li>
+						<li>CreateSimpleProstheticArm</li>
+						<li>CreateSimpleProstheticHand</li>
+						<li>CreateSimpleProstheticFoot</li>
+						<li>CreateArtificialPelvis</li>
+						<li>CreateArtificialClavicle</li>
+						<li>CreateHydraulicJaw</li>
+						<li>CreateArtificialNose</li>
+						<li>CreateLightReceptor</li>
+						<li>CreateGoldenEye</li>
+					</recipes>
+					<researchPrerequisites>
+						<li>SimpleProsthetics</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "EPOE_TableOrgansMini"]</xpath>
+				<value>
+					<designationCategory>
+						<li>Production</li>
+					</designationCategory>
+					<recipes>
+						<li>CreateBrainStimulator</li>
+						<li>CreateSurrogateLung</li>
+						<li>CreateSurrogateHeart</li>
+						<li>CreateSurrogateKidney</li>
+						<li>CreateSurrogateStomach</li>
+						<li>CreateSurrogateLiver</li>
+					</recipes>
+					<researchPrerequisites>
+						<li>SurrogateOrgans</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+			<!-- RecipeDefs -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Expanded Prosthetics and Organ Engineering</modName>
+                <file>Recipe_Synthesizer.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[@Name = "RecipeSyntheticOrgan"]/recipeUsers</xpath>
+				<value>
+					<li>EPOE_TableOrgansMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Expanded Prosthetics and Organ Engineering</modName>
+                <file>Recipe_UpgradingStation.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[@Name = "RecipeAdvancedProsthesis"]/recipeUsers</xpath>
+				<value>
+					<li>EPOE_TableBionicsMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Expanded Prosthetics and Organ Engineering</modName>
+                <file>Recipes_Going2Hell101.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MinceOrgans" or defName = "MinceLimbs"]/recipeUsers</xpath>
+				<value>
+					<li>Silj_TableButcherMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+			<!-- WorkGiverDefs -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Expanded Prosthetics and Organ Engineering</modName>
+                <file>Workgiver_Prosthetics.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/WorkGiverDef[defName = "DoBillsTableOrgans"]/fixedBillGiverDefs</xpath>
+				<value>
+						<li>EPOE_TableOrgansMini</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/WorkGiverDef[defName = "DoBillsSimpleProstheticWorkbench"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>EPOE_TableSimpleProstheticMini</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/WorkGiverDef[defName = "DoBillsBionicWorkbench"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>EPOE_TableBionicsMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

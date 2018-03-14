@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchProjectDef>
+		<defName>Silj_WorkspaceOptimization</defName>
+		<label>workspace optimization</label>
+		<description>Produce smaller and more precise tools and equipments, allowing colonists to build optimized workbenches which require less space.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>8</researchViewX>
+		<researchViewY>0.8</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

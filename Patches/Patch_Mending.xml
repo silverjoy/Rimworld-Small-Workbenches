@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Mending</modName>
+				<yourMod>Small Workbenches</yourMod>
+			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Small Workbenches</modName>
+                <file>Buildings_Mending.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Mending_TableMendingMini"]</xpath>
+				<value>
+					<designationCategory>
+						<li>Production</li>
+					</designationCategory>
+					<recipes>
+						<li>MendSimpleApparel</li>
+						<li>MendComplexApparel</li>
+						<li>MendSimpleWeapon</li>
+						<li>MendComplexWeapon</li>
+					</recipes>
+					<researchPrerequisites>
+						<li>Mending</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Mending_TableMendingMini"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>MendingKit</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+			<!-- RecipeDefs -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Mending</modName>
+                <file>Recipe_Misc.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "RecycleApparel"]/recipeUsers</xpath>
+				<value>
+					<li>Silj_ElectricTailoringBenchMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Mending</modName>
+                <file>Recipe_Production.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeMendingKit"]/recipeUsers</xpath>
+				<value>
+					<li>Silj_ElectricTailoringBenchMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+			<!-- WorkGiverDefs -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Mending</modName>
+                <file>mending_WorkGivers.xml</file>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/WorkGiverDef[defName = "DoBillsMending"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>Mending_TableMendingMini</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/WorkGiverDef[defName = "DoBillsRecycling"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>Silj_ElectricTailoringBenchMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>
