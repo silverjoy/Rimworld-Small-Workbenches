@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="Silj_BenchBase" ParentName="BenchBase" Abstract="True">
+  <ThingDef Name="Silj_MiniBenchBase" ParentName="BenchBase" Abstract="True">
     <researchPrerequisites>
       <li>Silj_WorkspaceOptimization</li>
     </researchPrerequisites>
   </ThingDef>
 
-  <ArchitectSense.DesignationSubCategoryDef>
-    <defName>Silj_SubCategoryWorkbenchMini</defName>
-    <label>small workbenches</label>
-    <description>workbenchs with optimized workspace.</description>
-    <defNames>
-      <li>Silj_TableSculptingMini</li>
-      <li>Silj_TableButcherMini</li>
-      <li>Silj_ElectricTailoringBenchMini</li>
-      <li>Silj_ElectricSmithyMini</li>
-      <li>Silj_TableMachiningMini</li>
-      <li>Silj_ElectricStoveMini</li>
-      <li>Silj_TableStonecutterMini</li>
-      <li>Silj_BreweryMini</li>
-      <li>Silj_DrugLabMini</li>
-      <li>Silj_ElectricSmelterMini</li>
-    </defNames>
-    <designationCategory>Production</designationCategory>
-    <preview>true</preview>
-    <debug>true</debug>
-  </ArchitectSense.DesignationSubCategoryDef>
+<!--  -->
 
-  <ThingDef ParentName="Silj_BenchBase">
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_TableSculptingMini</defName>
     <label>small sculptor's table</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -87,7 +68,9 @@
     </placeWorkers>
   </ThingDef>
 
-  <ThingDef ParentName="Silj_BenchBase">
+<!--  -->
+
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_TableButcherMini</defName>
     <label>small butcher table</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -150,7 +133,9 @@
 		</placeWorkers>
   </ThingDef>
 
-  <ThingDef ParentName="Silj_BenchBase">
+<!--  -->
+
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_ElectricTailoringBenchMini</defName>
     <label>small electric tailor bench</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -220,7 +205,9 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="Silj_BenchBase">
+<!--  -->
+
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_ElectricSmithyMini</defName>
     <label>small electric smithy</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -285,7 +272,9 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="Silj_BenchBase">
+<!--  -->
+
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_TableMachiningMini</defName>
     <label>small machining table</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -358,7 +347,9 @@
 		</placeWorkers>
   </ThingDef>
 
-  <ThingDef ParentName="Silj_BenchBase">
+<!--  -->
+
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_ElectricStoveMini</defName>
     <label>small electric stove</label>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
@@ -424,7 +415,9 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="Silj_BenchBase">
+<!--  -->
+
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_TableStonecutterMini</defName>
     <label>small stonecutter's table</label>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
@@ -486,7 +479,9 @@
 		</placeWorkers>
   </ThingDef>
 
-  <ThingDef ParentName="Silj_BenchBase">
+<!--  -->
+
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_BreweryMini</defName>
     <label>small brewery</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -534,8 +529,10 @@
       <li>Brewing</li>
     </researchPrerequisites>
   </ThingDef>
+
+<!--  -->
   
-  <ThingDef ParentName="Silj_BenchBase">
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_DrugLabMini</defName>
     <label>small drug lab</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -596,8 +593,10 @@
       <li>DrugProduction</li>
     </researchPrerequisites>
   </ThingDef>
+
+<!--  -->
   
-  <ThingDef ParentName="Silj_BenchBase">
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_ElectricSmelterMini</defName>
     <label>small electric smelter</label>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
@@ -668,8 +667,10 @@
     <designationHotKey>Misc10</designationHotKey>
   </ThingDef>
 
-<!--
-	<ThingDef ParentName="Silj_BenchBase">
+<!--  -->
+
+  <!--
+	<ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Silj_ComponentAssemblyBenchMini</defName>
     <label>small CAB</label>
     <description>A workbench equipped with advanced tools for producing components from simpler materials. Provides optimized workspace.</description>
@@ -737,6 +738,76 @@
       <li>ComponentAssembly</li>
     </researchPrerequisites>
   </ThingDef>
--->
-  
+  -->
+
+<!-- Architect Sense -->
+
+  <ArchitectSense.DesignationSubCategoryDef>
+    <defName>Silj_SubCategoryWorkbenchMini</defName>
+    <label>small workbenches</label>
+    <description>workbenchs with optimized workspace.</description>
+    <defNames>
+      <li>Silj_TableSculptingMini</li>
+      <li>Silj_TableButcherMini</li>
+      <li>Silj_ElectricTailoringBenchMini</li>
+      <li>Silj_ElectricSmithyMini</li>
+      <li>Silj_TableMachiningMini</li>
+      <li>Silj_ElectricStoveMini</li>
+      <li>Silj_TableStonecutterMini</li>
+      <li>Silj_BreweryMini</li>
+      <li>Silj_DrugLabMini</li>
+      <li>Silj_ElectricSmelterMini</li>
+    </defNames>
+    <designationCategory>Production</designationCategory>
+    <preview>true</preview>
+    <debug>true</debug>
+  </ArchitectSense.DesignationSubCategoryDef>
+
+<!-- RePower -->
+
+  <RePower.RePowerDef>
+    <defName>RePower_Silj_ElectricTailoringBenchMini</defName>
+    <targetDef>Silj_ElectricTailoringBenchMini</targetDef>
+    <lowPower>-10</lowPower>
+    <highPower>-500</highPower>
+    <poweredWorkbench>true</poweredWorkbench>
+    <poweredReservable>false</poweredReservable>
+  </RePower.RePowerDef>
+
+  <RePower.RePowerDef>
+    <defName>RePower_Silj_ElectricSmithyMini</defName>
+    <targetDef>Silj_ElectricSmithyMini</targetDef>
+    <lowPower>-10</lowPower>
+    <highPower>-1000</highPower>
+    <poweredWorkbench>true</poweredWorkbench>
+    <poweredReservable>false</poweredReservable>
+  </RePower.RePowerDef>
+
+  <RePower.RePowerDef>
+    <defName>RePower_Silj_TableMachiningMini</defName>
+    <targetDef>Silj_TableMachiningMini</targetDef>
+    <lowPower>-10</lowPower>
+    <highPower>-1400</highPower>
+    <poweredWorkbench>true</poweredWorkbench>
+    <poweredReservable>false</poweredReservable>
+  </RePower.RePowerDef>
+
+  <RePower.RePowerDef>
+    <defName>RePower_Silj_ElectricStoveMini</defName>
+    <targetDef>Silj_ElectricStoveMini</targetDef>
+    <lowPower>-10</lowPower>
+    <highPower>-1000</highPower>
+    <poweredWorkbench>true</poweredWorkbench>
+    <poweredReservable>false</poweredReservable>
+  </RePower.RePowerDef>
+
+  <RePower.RePowerDef>
+    <defName>RePower_Silj_ElectricSmelterMini</defName>
+    <targetDef>Silj_ElectricSmelterMini</targetDef>
+    <lowPower>-400</lowPower>
+    <highPower>-4500</highPower>
+    <poweredWorkbench>true</poweredWorkbench>
+    <poweredReservable>false</poweredReservable>
+  </RePower.RePowerDef>
+
 </Defs>

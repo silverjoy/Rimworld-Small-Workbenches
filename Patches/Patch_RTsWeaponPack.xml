@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>RT's Weapon Pack B18</modName>
+				<yourMod>Small Workbenches</yourMod>
+			</li>
+			<li Class="ModCheck.FindFile">
+				<modName>Small Workbenches</modName>
+				<file>Buildings_RTsWeaponPack.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "RT_WeaponAssemblyTableMini"]</xpath>
+				<value>
+					<designationCategory>
+						<li>Production</li>
+					</designationCategory>
+					<researchPrerequisites>
+						<li>RT_WeaponAssemblyTable</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+			<!-- RecipeDefs -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RecipeDefs_Grenades.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "CraftM18SmokeGrenade" or defName = "CraftM67FragGrenade" or defName = "CraftM84FlashbangGrenade" or defName = "CraftANM14TH3IncendiaryGrenade" or defName = "CraftFirefoamGrenadeLite" or defName = "CraftFirefoamGrenade"]/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RecipeDefs_HeavyWeapons.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "M72LAWCraft" or defName = "M79GLCraft" or defName = "PKMCraft" or defName = "RPGCraft" or defName = "M32MGLCraft" or defName = "MG42Craft" or defName = "SAWM249Craft" or defName = "BARM1918Craft"]/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RecipeDefs_Pistols.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "FiveSevenCraft" or defName = "Glock17Craft" or defName = "SWMagnumCraft" or defName = "DeagleCraft" or defName = "ColtPythonRevolverCraft" or defName = "M1911Craft" or defName = "LugerP08Craft" or defName = "BerettaM9Craft"]/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RecipeDefs_Ranged.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "SlingshotCraft" or defName = "TomahawkThrowingAxeCraft" or defName = "ShurikenCraft" or defName = "ExtinguisherCraft" or defName = "TCrossbowCraft" or defName = "CompoundbowCraft"]/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RecipeDefs_Rifles.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "L85A2Craft" or defName = "InfernoRifleCraft" or defName = "AK12Craft" or defName = "LVOACCraft" or defName = "AACHoneyBadgerCraft" or defName = "IWITavorCraft" or defName = "FNFALCraft" or defName = "AK5CCraft" or defName = "QBZ97Craft" or defName = "HKG36CCraft" or defName = "AK47Craft" or defName = "M1GarandCraft" or defName = "M4Craft" or defName = "HKG3A3Craft" or defName = "SteyrStg77AUGCraft" or defName = "HKXM8Craft" or defName = "FNF2000Craft" or defName = "M14Craft" or defName = "FNSCARLCraft" or defName = "FAMASCraft"]/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RecipeDefs_Shotguns.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "USAS12Craft" or defName = "M1014Craft" or defName = "DP12Craft" or defName = "Winchester87Craft" or defName = "SPAS12Craft"]/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RecipeDefs_Smgs.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BerettaM12Craft" or defName = "MP18Craft" or defName = "MP40Craft" or defName = "Skorpionvz61Craft" or defName = "UziCraft" or defName = "HKMP7Craft" or defName = "CZ3A1Craft" or defName = "KRISSVectorCraft" or defName = "HKUMP45Craft" or defName = "FNP90Craft" or defName = "TSMGCraft" or defName = "PPSH41Craft"]/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RecipeDefs_SniperRifles.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Kar98Craft" or defName = "SteyrSSG08Craft" or defName = "L96A1Craft" or defName = "AWMCraft" or defName = "BarrettCraft" or defName = "VSSVintorezCraft" or defName = "DragunovCraft"]/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+			<!-- ThingDefs -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			 <li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>RT_Weapons_MeleeWeapons.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[@Name = "RT_BaseMeleeWeapon"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+
+			<!-- WorkGiverDefs -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.FindFile">
+				<modName>RT's Weapon Pack B18</modName>
+				<file>WorkGivers_CreatingWeapons.xml</file>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/WorkGiverDef[defName = "DoBillsWeaponAssemblyTable"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>RT_WeaponAssemblyTableMini</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

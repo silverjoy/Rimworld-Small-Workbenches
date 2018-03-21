@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="Silj_BenchBase">
+  
+  <ThingDef ParentName="Silj_MiniBenchBase">
     <defName>Mending_TableMendingMini</defName>
     <label>small mending workbench</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -35,15 +36,15 @@
       <Cleanliness>-5</Cleanliness>
     </statBases>
     <size>(2,1)</size>
-<!--
+    <!--
     <designationCategory>Production</designationCategory>
--->
+    -->
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-<!--
+    <!--
      <recipes>
       <li>MendSimpleApparel</li>
       <li>MendComplexApparel</li>
@@ -51,7 +52,7 @@
       <li>MendComplexWeapon</li>
           <li>MendProsthetics</li>
     </recipes>
--->
+    -->
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -69,9 +70,9 @@
         <fuelCapacity>5.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
-<!--
+            <!--
             <li>MendingKit</li>
--->
+            -->
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -88,11 +89,11 @@
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
-<!--
+    <!--
     <researchPrerequisites>
       <li>Mending</li>
     </researchPrerequisites>
--->
+    -->
   </ThingDef>
 
 </Defs>
